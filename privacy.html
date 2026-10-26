@@ -16,10 +16,10 @@
     <main>
       <h1>Privacy Policy</h1>
       <p class="notice">
-        Publisher-review draft · October 26, 2026 · Not yet effective. AI scanning and advertising
-        are not active in the current development app. Android crash reporting remains off pending
-        privacy review. The sections below distinguish current behavior from features that require
-        activation.
+        Publisher-review draft · Updated October 27, 2026 · Not yet effective. AI scanning and live
+        advertising are not active. A publisher-approved Android test-ad session is being prepared;
+        its Google SDK data practices are described below. Android crash reporting remains off
+        pending privacy review. This draft is not release approval.
       </p>
       <h2>1. Who is responsible</h2>
       <p>
@@ -131,13 +131,32 @@
         >. Crash-report delivery and default activation have not yet been approved or verified for
         release.
       </p>
-      <h2>6. Advertising — not currently active</h2>
+      <h2>6. Advertising — development tests, live delivery off</h2>
       <p>
-        The current development app does not run AdMob advertising. Rewarded ads and sponsored
-        food-library cards are planned, with no ads on Home. Before activating advertising, we will
-        update this notice with the actual SDK data practices, available consent controls and
-        regional requirements. No advertising callback alone is permission to upload a photo, and
-        declining an ad does not prevent manual tracking.
+        Live AdMob advertising remains disabled. The publisher has approved a controlled Android
+        development test using Google's official demonstration ads for sponsored food-library cards.
+        Test ads do not earn revenue or scan credits. There are no ads on Home. Test requests are
+        disabled by default outside an approved test session.
+      </p>
+      <p>
+        When that test is enabled, Google's Mobile Ads SDK can process the device IP address,
+        app/device identifiers, ad interactions and technical diagnostics. The build blocks Android
+        advertising-ID permissions and delays SDK measurement until initialization, but these
+        controls do not mean that Google receives no data. Snapabolic does not attach account
+        identity, food searches, tracking records or photos to ad requests. Requests use Google's
+        test unit and non-personalized-ad option; this option does not replace required consent or
+        privacy review. See Google's
+        <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure"
+          >Mobile Ads data disclosure</a
+        >.
+      </p>
+      <p>
+        Live ad units, regional consent, the AdMob GDPR message and production privacy/store forms
+        still require review before activation. The development reward receiver is disabled; if
+        activated after review, it will verify Google's signed callback and bind a random attempt
+        identifier to the account that requested the ad. A client callback never creates credit. No
+        ad callback is permission to upload a photo, and declining an ad does not prevent manual
+        tracking.
       </p>
       <h2>7. Why we use information</h2>
       <p>
